@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tableRecord" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#hideDateTimeFormat" prefHeight="796.0" prefWidth="1275.0" stylesheets="css/AdministratorGuiStyle.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SearchController" >
+    <children>
+      <Label fx:id="apotelesmataLabel" layoutX="608.0" layoutY="363.0" prefHeight="42.0" prefWidth="99.0" text="Results">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Button fx:id="btnSearch" layoutX="853.0" layoutY="302.0" mnemonicParsing="false" onAction="#loadFromData" prefHeight="26.0" prefWidth="78.0" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Button>
+      <TextField fx:id="adminIdRecordField" layoutX="211.0" layoutY="38.0" prefHeight="26.0" prefWidth="171.0" promptText="Enter a Id" />
+      <Button fx:id="clearBtn" layoutX="969.0" layoutY="302.0" mnemonicParsing="false" onAction="#clearTextFieldsValues" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TableView fx:id="recordTable" layoutX="30.0" layoutY="424.0" prefHeight="358.0" prefWidth="1216.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="424.0">
+         <columns>
+            <TableColumn fx:id="columnIdRecord" prefWidth="75.00001525878906" text="Id Record" />
+            <TableColumn fx:id="columnTerminalName" prefWidth="117.99996948242188" text="Terminal Name" />
+            <TableColumn fx:id="columnServerDateTime" prefWidth="146.0" text="Server DateTime" />
+            <TableColumn fx:id="columnClientDateTime" prefWidth="140.0" text="Client DateTime" />
+            <TableColumn fx:id="columnLongitude" prefWidth="90.0" text="Longitude" />
+            <TableColumn fx:id="columnLatitude" text="Latitude" />
+            <TableColumn fx:id="columnAccelerationX" prefWidth="124.0" text="Acceleration X" />
+            <TableColumn fx:id="columnAccelerationY" prefWidth="121.0" text="Acceleration Y" />
+            <TableColumn fx:id="columnAccelerationZ" prefWidth="117.0" text="Acceleration Z" />
+            <TableColumn fx:id="columnProximityX" prefWidth="102.0" text="Proximity X" />
+            <TableColumn fx:id="columnConfirmed" prefWidth="122.0" text="Confirmed" />
+         </columns>
+      </TableView>
+      <Label layoutX="31.0" layoutY="42.0" text="Sample Id">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="adminTerminalNameField" layoutX="211.0" layoutY="88.0" prefHeight="26.0" prefWidth="171.0" promptText="Enter a name" />
+      <TextField fx:id="adminGpsLongitudeFromField" layoutX="211.0" layoutY="243.0" prefHeight="26.0" prefWidth="171.0" promptText="From Longitude" />
+      <Label layoutX="29.0" layoutY="92.0" text="Terminal Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="searchFormLabel" layoutX="578.0" prefHeight="42.0" prefWidth="158.0" text="Search Form">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <Label layoutX="29.0" layoutY="142.0" text="Server Date Time">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="246.0" text="Gps Longitude">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="296.0" text="Gps Latitude">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adminGpsLatitudeFromField" layoutX="211.0" layoutY="293.0" promptText="From Latitude" />
+      <TextField fx:id="adminGpsLongitudeToField" layoutX="417.0" layoutY="242.0" promptText="To Longitude" />
+      <TextField fx:id="adminGpsLatitudeToField" layoutX="417.0" layoutY="292.0" promptText="To Latitude" />
+      <TextField fx:id="adminProximityXField" layoutX="1030.0" layoutY="38.0" promptText="Enter value" />
+      <TextField fx:id="adminAccelerationXField" layoutX="1030.0" layoutY="88.0" promptText="Enter value" />
+      <TextField fx:id="adminAccelerationYField" layoutX="1030.0" layoutY="139.0" promptText="Enter value" />
+      <TextField fx:id="adminAccelerationZField" layoutX="1030.0" layoutY="191.0" promptText="Enter value" />
+      <Label layoutX="853.0" layoutY="42.0" text="Proximity X">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="853.0" layoutY="91.0" text="Acceleration X">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="854.0" layoutY="142.0" text="Acceleration Y">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="853.0" layoutY="195.0" text="Acceleration Z">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ChoiceBox fx:id="adminCheckBox" layoutX="853.0" layoutY="242.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Button fx:id="btnRefresh" layoutX="1058.0" layoutY="302.0" mnemonicParsing="false" onAction="#refreshData" prefHeight="26.0" prefWidth="75.0" text="Refresh">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="previewsPageBtn" contentDisplay="GRAPHIC_ONLY" layoutX="955.0" layoutY="392.0" mnemonicParsing="false" onAction="#loadPreviewsPage" prefHeight="26.0" prefWidth="28.0" text="P">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="nextPageBtn" contentDisplay="GRAPHIC_ONLY" layoutX="1016.0" layoutY="392.0" mnemonicParsing="false" onAction="#loadNextPage" text="N">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="labelPage" layoutX="1113.0" layoutY="395.0" text="Page">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="pageViewer" layoutX="1155.0" layoutY="392.0" prefHeight="26.0" prefWidth="59.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Button fx:id="enterPageBtn" contentDisplay="GRAPHIC_ONLY" layoutX="1215.0" layoutY="392.0" mnemonicParsing="false" onAction="#loadPageFromChoiceBox" prefHeight="26.0" prefWidth="28.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="lastPageBtn" contentDisplay="GRAPHIC_ONLY" layoutX="1051.0" layoutY="392.0" mnemonicParsing="false" onAction="#loadLastPage" prefHeight="26.0" prefWidth="28.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="firstPageBtn" contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="392.0" mnemonicParsing="false" onAction="#loadFirstPage" prefHeight="26.0" prefWidth="28.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="adminClientDateTimeFrom" layoutX="211.0" layoutY="192.0" onMouseMoved="#showDateTimeFormat" promptText="From Client Datetime " />
+      <TextField fx:id="adminClientDateTimeTo" layoutX="417.0" layoutY="191.0" onMouseMoved="#showDateTimeFormat" promptText="To Client Datetime" />
+      <TextField fx:id="adminServerDateTimeFrom" layoutX="211.0" layoutY="139.0" onMouseMoved="#showDateTimeFormat" prefHeight="26.0" prefWidth="171.0" promptText="From server datetime" />
+      <TextField fx:id="adminServerDateTimeTo" layoutX="417.0" layoutY="139.0" onMouseMoved="#showDateTimeFormat" promptText="To server datetime" />
+      <Label layoutX="32.0" layoutY="195.0" text="Client Date Time">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="exampleDatetimeFormatLabel" layoutX="271.0" layoutY="173.0" prefHeight="16.0" prefWidth="292.0" text="Example YYYY-MM-DD HH:MM:SS.MMMMM" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label fx:id="invalidFromServerDatetimeFormatLabel" layoutX="184.0" layoutY="165.0" prefHeight="16.0" prefWidth="203.0" text="Invalid FromServerDatetime format " visible="false">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label fx:id="invalidFromClientDatetimeFormatLabel" layoutX="184.0" layoutY="219.0" prefHeight="16.0" prefWidth="203.0" text="Invalid FromClientDatetime format " visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidToClientDatetimeFormatLabel" layoutX="410.0" layoutY="219.0" prefHeight="16.0" prefWidth="184.0" text="Invalid ToClientDatetime format " visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidToServerDatetimeFormatLabel" layoutX="410.0" layoutY="165.0" prefHeight="16.0" prefWidth="193.0" text="Invalid ToServerDatetime format " visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorServerDatetimeFields" layoutX="598.0" layoutY="124.0" prefHeight="56.0" prefWidth="233.0" text="Error Server Datetime format! Σε περίπτωση συμπλήρωσης του ενός πεδίου απαιτείται και η συμπλήρωση του άλλου πεδίου." visible="false" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorClientDatetimeFields" layoutX="598.0" layoutY="176.0" prefHeight="56.0" prefWidth="233.0" text="Error Client Datetime! Σε περίπτωση συμπλήρωσης του ενός πεδίου απαιτείται και η συμπλήρωση του άλλου πεδίου." visible="false" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorGpsLongitudeFields" layoutX="598.0" layoutY="227.0" prefHeight="56.0" prefWidth="233.0" text="Error GPS Longitude! Σε περίπτωση συμπλήρωσης του ενός πεδίου απαιτείται και η συμπλήρωση του άλλου πεδίου." visible="false" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorGpsLatitudeFields" layoutX="598.0" layoutY="278.0" prefHeight="56.0" prefWidth="233.0" text="Error GPS Latitude! Σε περίπτωση συμπλήρωσης του ενός πεδίου απαιτείται και η συμπλήρωση του άλλου πεδίου." visible="false" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidSampleIdLabel" layoutX="211.0" layoutY="64.0" prefHeight="14.0" prefWidth="116.0" text="Invalid Sample Id " visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidFromLatitudeLabel" layoutX="215.0" layoutY="321.0" text="Invalid FromGpsLatitude" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidFromLongitudeLabel" layoutX="211.0" layoutY="272.0" text="Invalid FromGpsLongitude" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidToLongitudeLabel" layoutX="417.0" layoutY="271.0" text="Invalid ToGpsLongitude" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidToLatitudeLabel" layoutX="416.0" layoutY="319.0" prefHeight="19.0" prefWidth="145.0" text="Invalid ToGpsLatitude" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidProximityXLabel" layoutX="1029.0" layoutY="62.0" prefHeight="19.0" prefWidth="135.0" text="Invalid proximityX value" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidAccelerationXLabel" layoutX="1029.0" layoutY="115.0" prefHeight="19.0" prefWidth="171.0" text="Invalid AccelerationX value" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidAccelerationYLabel" layoutX="1029.0" layoutY="164.0" prefHeight="19.0" prefWidth="158.0" text="Invalid AccelerationY value" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidAccelerationZLabel" layoutX="1029.0" layoutY="218.0" prefHeight="19.0" prefWidth="158.0" text="Invalid AccelerationZ value" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

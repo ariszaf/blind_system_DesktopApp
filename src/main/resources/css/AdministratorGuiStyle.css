@@ -1,0 +1,82 @@
+#enterPageBtn,#nextPageBtn,#previewsPageBtn,#FieldpageViewer,#firstPageBtn,#lastPageBtn{
+    -fx-border-color: #2E9AFE;
+    -fx-border-radius: 13%;
+}
+
+#save_button{
+    -fx-border-color: #2E9AFE;
+    -fx-border-radius: 9%;
+}
+
+#enterPageBtn {
+    -fx-background-image: url("/icons/right_arrow_next_play_forward-128.png");
+    -fx-background-size: 22 22;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+#nextPageBtn{
+    -fx-background-image: url("/icons/next.png");
+    -fx-background-size: 22 22;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+#previewsPageBtn{
+    -fx-background-image: url("/icons/previous.png");
+    -fx-background-size: 22 22;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+#firstPageBtn{
+    -fx-background-image: url("/icons/first-icon.png");
+    -fx-background-size: 21 18;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+#lastPageBtn{
+    -fx-background-image: url("/icons/last-icon-44490.png");
+    -fx-background-size: 21 18;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+#save_button{
+    -fx-background-image: url("/icons/save-button-icon.png");
+    -fx-background-size: 26 23;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left;
+}
+
+
+
+#adminGpsLatitudeToField, #adminTerminalNameField, #settings_acceleration_z_value ,#settings_device2,#settings_alert_topic,#settings_mqtt_port,#settings_mqtt_ip,#settings_acceleration_y_value,#settings_acceleration_x_value,#settings_proximity_value,#settings_frequncy, #adminGpsLongitudeFromField, #adminCheckBox,#adminProximityXField,#adminAccelerationXField, #adminGpsLatitudeFromField, #adminGpsLongitudeToField, #adminDateTimeFrom, #pageViewer, #adminIdRecordField, #adminDateTimeTo, #adminGpsLatitudeFrom, #FieldadminGpsLongitudeTo, #adminAccelerationYField,#adminAccelerationZField,#clearBtn,#btnSearch,#btnRefresh,#adminServerDateTimeFrom,#adminServerDateTimeTo,#adminClientDateTimeFrom,#adminClientDateTimeTo{
+    -fx-border-color: #2E9AFE;
+    -fx-border-radius: 3%;
+}
+
+#recordTable{
+    -fx-border-color: #2E9AFE;
+    -fx-border-radius: 0.2%;
+    -fx-border-width: 2px;
+}
+
+#rte{
+    -fx-border-color: #2E9AFE;
+    -fx-border-radius: 0.2%;
+    -fx-border-width: 2px;
+}
+#invalidFromServerDatetimeFormatLabel,#invalidFromClientDatetimeFormatLabel,#invalidToClientDatetimeFormatLabel,#invalidToServerDatetimeFormatLabel,#errorServerDatetimeFields,#errorGpsLongitudeFields,#errorClientDatetimeFields,#errorGpsLatitudeFields,#invalidSampleIdLabel,#invalidFromLatitudeLabel,#invalidFromLongitudeLabel,#invalidToLongitudeLabel,#invalidToLatitudeLabel,#invalidProximityXLabel,#invalidAccelerationXLabel,#invalidAccelerationYLabel,#invalidAccelerationZLabel{
+    -fx-text-fill: red;
+}
+
+#exampleDatetimeFormatLabel{
+    -fx-text-fill: #2E9AFE;
+}
+
+.style1{
+    -fx-text-fill: #2E9AFE;
+
+}

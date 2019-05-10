@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SettingsTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1174.0" stylesheets="css/AdministratorGuiStyle.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <children>
+      <TextField fx:id="settings_proximity_value" layoutX="260.0" layoutY="160.0" />
+      <TextField fx:id="settings_acceleration_x_value" layoutX="260.0" layoutY="260.0" />
+      <TextField fx:id="settings_acceleration_y_value" layoutX="260.0" layoutY="360.0" />
+      <TextField fx:id="settings_acceleration_z_value" layoutX="260.0" layoutY="460.0" />
+      <TextField fx:id="settings_frequncy" layoutX="260.0" layoutY="560" />
+
+      <CheckBox fx:id="settings_proximity_check_button" layoutX="472.0" layoutY="164.0" mnemonicParsing="false" onAction="#proximityCheckButtonClick" />
+      <CheckBox fx:id="settings_acceleration_x_check_button" layoutX="472.0" layoutY="264.0" mnemonicParsing="false" onAction="#accelerationXCheckButtonClick" prefHeight="18.0" prefWidth="24.0" />
+      <CheckBox fx:id="settings_acceleration_y_check_button" layoutX="472.0" layoutY="364.0" mnemonicParsing="false" onAction="#accelerationYCheckButtonClick" />
+      <CheckBox fx:id="settings_acceleration_z_check_button" layoutX="472.0" layoutY="464.0" mnemonicParsing="false" onAction="#accelerationZCheckButtonClick" />
+      <Button fx:id="save_button" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="620.0" layoutY="680" mnemonicParsing="false" onAction="#onClickSaveButton" prefHeight="32.0" prefWidth="92.0" text="Save">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label layoutX="100.0" layoutY="160.0" text="Proximity">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="100" layoutY="560" text="Frequency">
+         <font>
+         <Font size="15.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="100" layoutY="260" text="Acceleration X">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="100" layoutY="360.0" text="Acceleration Y">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="100.0" layoutY="460.0" text="Acceleration Z">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="540.0" layoutY="24.0" text="Administretor Settings">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="60.0" text="Thresholdes">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+
+
+      <Label layoutX="872.0" layoutY="160.0" text="Device1">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+      <Label layoutX="872.0" layoutY="260.0" text="Device2">
+              <font>
+                 <Font size="15.0" />
+              </font>
+      </Label>
+      <Label layoutX="872.0" layoutY="360.0" text="Alert Topic">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="872.0" layoutY="460.0" text="MqttPort">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="872.0" layoutY="560.0" text="MqttIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="settings_device1" layoutX="980.0" layoutY="160.0" />
+      <TextField fx:id="settings_device2" layoutX="980.0" layoutY="260.0" />
+      <TextField fx:id="settings_alert_topic" layoutX="980.0" layoutY="360.0" />
+      <TextField fx:id="settings_mqtt_port" layoutX="980.0" layoutY="460.0" />
+      <TextField fx:id="settings_mqtt_ip" layoutX="980.0" layoutY="560.0" />
+      <Label layoutX="1000.0" layoutY="60.0" text="Connection">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

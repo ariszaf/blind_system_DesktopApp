@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane fx:id="mainPanel" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.112" fx:controller="gui.MainController" tabClosingPolicy="UNAVAILABLE">
+    <tabs>
+        <Tab id="searchTab" text="Administrator Search">
+            <content>
+                <fx:include fx:id="tab1" source="search.fxml" />
+            </content>
+        </Tab>
+        <Tab id="settingsTab" text="Settings">
+            <content>
+                <fx:include fx:id="tab2" source="settings.fxml" />
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
